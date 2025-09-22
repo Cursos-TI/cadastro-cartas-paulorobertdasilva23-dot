@@ -15,20 +15,14 @@ int main() {
   float PIB;
   float pontos_turisticos;
   
-Código: A01
-
-Nome da Cidade: São Paulo
-
-População: 12325000
-
-Área: 1521.11 km²
-
-PIB: 699.28 bilhões de reais
-
-Número de Pontos Turísticos: 50
-  // Área para entrada de dados
-
-  // Área para exibição dos dados da cidade
+// Área para entrada de dados
+  
+//Introdução do usuário ao jogo
+printf("Óla bem-vindo ao Super Trunfo, nosso jogo de cartas, aqui você irá cadastrar cartas de cidades brasileiras com informções desde seu o nome até seu PIB se divirta!! \n")
+//Armazenando o número da carta informado pelo usuário
+printf("Insira o número da carta");
+scanf("%d", &numero_do_carta);
+// Área para exibição dos dados da cidade
 
 return 0;
 } 
