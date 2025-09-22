@@ -23,37 +23,40 @@ int main() {
   //Armazenando o número da carta informado pelo usuário  
     printf("Insira o número da carta: \n");
     scanf("%d", &numero_do_carta);
-
-  //Armazenando o número da carta informado pelo usuário   
-    printf("Insira a letra do Estado onde a cidade se encontra: \n");
-    scanf(" %c", &letra_do_estado);
-  
-  //Armazenando o número da carta informado pelo usuário
+    
+  //Armazenando o código da carta informado pelo usuário
     printf("Insira o código da carta seguindo o exemplo a seguir. Ex: A01 \n");
     scanf(" %c", &codigo_da_carta);
-  
-    //Armazenando o número da carta informado pelo usuário
+
+  //Armazenando o nome da cidade informado pelo usuário
     printf("Insira o nome da cidade: \n");
     scanf(" %s", &nome_da_cidade);
 
-    //Armazenando a população da cidade informado pelo usuário
+  //Armazenando a letra do estado informado pelo usuário   
+    printf("Insira a letra do Estado onde a cidade se encontra: \n");
+    scanf(" %c", &letra_do_estado);
+  
+  //Armazenando a população da cidade informado pelo usuário
     printf("Insira a população da cidade: \n");
     scanf(" %d", &populacao);
 
-    //Armazenando a área da cidade informado pelo usuário
+  //Armazenando a área da cidade informado pelo usuário
     printf("Insira a área da cidade: \n");
     scanf(" %f", &area_da_cidade);
 
-    //Armazenando o PIB da cidade informado pelo usuário
+  //Armazenando o PIB da cidade informado pelo usuário
     printf("Insira o PIB da cidade: \n");
     scanf(" %f", &PIB);
   
-     //Armazenando o PIB da cidade informado pelo usuário
+  //Armazenando o PIB da cidade informado pelo usuário
     printf("Insira pontos turísticos da cidade: \n");
     scanf(" %s", &pontos_turisticos);
     
+   printf("Agora faça o mesmo e insira as informações para a carta 2. \n");
 
 // Área para exibição dos dados da cidade
+
+
 
 return 0;
 } 
