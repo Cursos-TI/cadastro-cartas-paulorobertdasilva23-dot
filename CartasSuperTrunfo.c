@@ -31,9 +31,14 @@ int main() {
   
 // Área para entrada de dados
     
+
+
 //Introdução do usuário ao jogo
    printf("Óla bem-vindo ao Super Trunfo, nosso jogo de cartas, aqui você irá cadastrar cartas de cidades brasileiras com informções desde seu o nome até seu pib se divirta!! \n\n");
   
+
+
+
 //Armazenando o número da carta informado pelo usuário  
     printf("Insira o número da carta: \n");
       scanf("%d", &numero_do_carta_1 );
@@ -74,9 +79,15 @@ int main() {
       scanf("%49s", pontos_turisticos_1);
         getchar();
 
+
+
 //Informando o usuário a repetir o processo para a próxima carta 
 
    printf("Agora que você já aprendeu como prencher sua carta repita o porcesso pra a segunda carta \n\n");
+
+
+
+
 
 //Armazenando o número da carta informado pelo usuário  
     printf("Insira o número da carta: \n");
@@ -118,6 +129,9 @@ int main() {
       scanf("%49s", pontos_turisticos_2);
         getchar();
 
+
+
+
 // Área para exibição dos dados da carta 1
 
     printf("\n=== CARTA CADASTRADA ===\n\n");
@@ -139,9 +153,10 @@ int main() {
     printf("Pontos turísticos: %s \n\n", pontos_turisticos_1);
 
 
+
+
+
 // Área para exibição dos dados da carta 2
-
-
     printf("\n=== CARTA CADASTRADA ===\n\n");
 
     printf("Carta: %d \n", numero_do_carta_2 );
