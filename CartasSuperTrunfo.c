@@ -80,12 +80,12 @@ int main() {
 
 //Armazenando o número da carta informado pelo usuário  
     printf("Insira o número da carta: \n");
-      scanf(" %d", numero_do_carta_2 );
+      scanf("%d", &numero_do_carta_2 );
         getchar();
     
 //Armazenando a letra do estado informado pelo usuário   
     printf("Insira a letra do Estado onde a cidade se encontra: \n");
-      scanf("%c", &letra_do_estado_2);
+      scanf(" %c", &letra_do_estado_2);
         getchar();
   
 //Armazenando o código da carta informado pelo usuário
