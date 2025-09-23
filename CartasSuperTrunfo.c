@@ -9,20 +9,20 @@ int main() {
 // Área para definição das variáveis para armazenar as propriedades das cidades
 
 //variáveis para armazenar os valores da carta 1
-  int numero_do_carta_1, pontos_turisticos_1;
-  char UF_1;
-  char codigo_da_carta_1[6]; 
-  char nome_da_cidade_1[30];
-  float populacao_1, pib_1, area_da_cidade_1;
+  int numero_carta1, pontos_turisticos1;
+  char UF1;
+  char codigo_carta1[6]; 
+  char cidade1[30];
+  float pop1, pib1, area1;
   
 
 //variáveis para armazenar os valores da carta 2
-  int numero_do_carta_2, pontos_turisticos_2 ;
-  char UF_2;
-  char codigo_da_carta_2[5]; 
-  char nome_da_cidade_2[30];
-  float populacao_2, area_da_cidade_2, pib_2,pib_per_capita_2;
-  float densidade_populacional_2 = populacao_2/area_da_cidade_2;
+  int numero_carta2, pontos_turisticos2 ;
+  char UF2;
+  char codigo_carta2[5]; 
+  char cidade2[30];
+  float pop2, area2, pib2;
+  
 
   
 // Área para entrada de dados
@@ -37,47 +37,47 @@ int main() {
 
 //Armazenando o número da carta informado pelo usuário  
     printf("Escolha o número da carta: \n");
-      scanf("%d", &numero_do_carta_1 );
+      scanf("%d", &numero_carta1 );
         getchar();
     
 //Armazenando a UF informado pelo usuário   
     printf("Insira a UF onde a cidade se encontra: \n");
-      scanf(" %s", &UF_1);
+      scanf(" %s", &UF1);
         
   
 //Armazenando o código da carta informado pelo usuário
     printf("Insira o código da carta utilizando a UF do estado como no exemplo a seguir. Ex: CE01 Ceará \n");
-      scanf("%5s", codigo_da_carta_1);
+      scanf("%5s", codigo_carta1);
         getchar();
 
 //Armazenando o nome da cidade informado pelo usuário
     printf("Escolha a cidade: \n");
-      scanf("%s", nome_da_cidade_1);
+      scanf("%s", cidade1);
         getchar();
 
 //Armazenando a população da cidade informado pelo usuário
     printf("Insira a população da cidade: \n");
-      scanf("%f", &populacao_1);
+      scanf("%f", &pop1);
         getchar();
 
 //Armazenando a área da cidade informado pelo usuário
     printf("Insira a área da cidade: \n");
-      scanf("%f", &area_da_cidade_1);
+      scanf("%f", &area1);
         getchar();
 
 //Armazenando o pib da cidade informado pelo usuário
     printf("Insira o pib da cidade: \n");
-      scanf("%f", &pib_1);
+      scanf("%f", &pib1);
         getchar();
   
 //Armazenando o pib da cidade informado pelo usuário
     printf("Insira a quantidade de pontos da cidade: \n");
-      scanf(" %d", &pontos_turisticos_1);
+      scanf(" %d", &pontos_turisticos1);
 
 // Cálculo do PIB per capita e densidade populacional da carta 1
 
-  float densidade_populacional_1 = populacao_1/area_da_cidade_1;
-  float pib_per_capita_1 = pib_1/populacao_1;
+  float densidade_populacional_1 = pop1/area1;
+  float pib_per_capita_1 = pib1/pop1;
        
 
 
@@ -92,98 +92,103 @@ int main() {
 
 //Armazenando o número da carta informado pelo usuário  
     printf("Insira o número da carta: \n");
-      scanf("%d", &numero_do_carta_2 );
+      scanf("%d", &numero_carta2 );
         getchar();
     
 //Armazenando a UF informado pelo usuário   
     printf("Insira a UF onde a cidade se encontra: \n");
-      scanf(" %s", &UF_2);
+      scanf(" %s", &UF2);
         getchar();
   
 //Armazenando o código da carta informado pelo usuário
     printf("Insira o código da carta utilizando a UF do estado como no exemplo a seguir. Ex: CE01 Ceará \n");
-      scanf("%5s", codigo_da_carta_2);
+      scanf("%5s", codigo_carta2);
         getchar();
 
 //Armazenando o nome da cidade informado pelo usuário
     printf("Insira o nome da cidade: \n");
-      scanf("%s", nome_da_cidade_2);
+      scanf("%s", cidade2);
         getchar();
 
 //Armazenando a população da cidade informado pelo usuário
     printf("Insira a população da cidade: \n");
-      scanf("%f", &populacao_2);
+      scanf("%f", &pop2);
         getchar();
 
 //Armazenando a área da cidade informado pelo usuário
     printf("Insira a área da cidade: \n");
-      scanf("%f", &area_da_cidade_2);
+      scanf("%f", &area2);
         getchar();
 
 //Armazenando o pib da cidade informado pelo usuário
     printf("Insira o pib da cidade: \n");
-      scanf("%f", &pib_2);
+      scanf("%f", &pib2);
         getchar();
   
 //Armazenando o pib da cidade informado pelo usuário
     printf("Insira a quantidade de pontos turísticos da cidade: \n");
-      scanf("%d", &pontos_turisticos_2);
+      scanf("%d", &pontos_turisticos2);
         getchar();
 
 // Cálculo do PIB per capita e densidade populacional da carta 2
 
-  float densidade_populacional_2 = populacao_2/area_da_cidade_2;
-  float pib_per_capita_2 = pib_2/populacao_2;
+  float dens_pop1 = pop1/area1;
+  float pib_per_capita_1 = pib1/pop1;
 
+  float dens_pop2 = pop2/area2;
+  float pib_per_capita_2 = pib2/pop2;
+
+  
+ 
 
 // Área para exibição dos dados da carta 1
 
     printf("\n=== CARTA CADASTRADA ===\n\n");
 
-    printf("Carta: %d \n", numero_do_carta_1 );
+    printf("Carta: %d \n", numero_carta1 );
 
-    printf("Código da carta: %s \n", codigo_da_carta_1);
+    printf("Código da carta: %s \n", codigo_carta1);
 
-    printf("UF: %s \n", UF_1);
+    printf("UF: %s \n", UF1);
 
-    printf("Nome da cidade: %s \n", nome_da_cidade_1);
+    printf("Nome da cidade: %s \n", cidade1);
 
-    printf("População: %d \n", populacao_1);
+    printf("População: %d \n", pop1);
 
-    printf("Área: %.2f \n", area_da_cidade_1);
+    printf("Área: %.2f \n", area1);
 
-    printf("PIB: %.3f \n", pib_1);
+    printf("PIB: %.3f \n", pib1);
 
-    printf("Pontos turísticos: %s \n", pontos_turisticos_1);
+    printf("Pontos turísticos: %s \n", pontos_turisticos1);
 
-    printf("Densiade populacional: %.2f \n", densidade_populacional_1, " hab/km²");
+    printf("Densiade populacional: %.2f hab/km² \n", dens_pop1);
 
-
+    printf("PIB per Capita: %.2f reais \n", pib_per_capita_1);
 
 
 
 // Área para exibição dos dados da carta 2
     printf("\n=== CARTA CADASTRADA ===\n\n");
 
-    printf("Carta: %d \n", numero_do_carta_2 );
+    printf("Carta: %d \n", numero_carta2 );
 
-    printf("Código da carta: %s \n", codigo_da_carta_2);
+    printf("Código da carta: %s \n", codigo_carta2);
 
-    printf("UF: %s \n", UF_2);
+    printf("UF: %s \n", UF2);
 
-    printf("Nome da cidade: %s \n", nome_da_cidade_2);
+    printf("Nome da cidade: %s \n", cidade2);
 
-    printf("População: %d \n", populacao_2);
+    printf("População: %d \n", pop2);
 
-    printf("Área: %.2f \n", area_da_cidade_2);
+    printf("Área: %.2f \n", area2);
 
-    printf("PIB: %.3f \n", pib_2);
+    printf("PIB: %.3f \n", pib2);
 
-    printf("Pontos turísticos: %s \n", pontos_turisticos_2);
+    printf("Pontos turísticos: %s \n", pontos_turisticos2);
     
-    printf("Densiade populacional: %.2f \n", densidade_populacional_2, " hab/km²");
+    printf("Densiade populacional: %.2f hab/km² \n", dens_pop1);
 
-    printf("PIB per Capita: %.2f \n", pib_2, " reais");
+    printf("PIB per Capita: %.2f reais \n", pib_per_capita_1);
 
 
 
