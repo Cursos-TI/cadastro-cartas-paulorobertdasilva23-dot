@@ -44,9 +44,9 @@ int main() {
       scanf("%d", &numero_do_carta_1 );
         getchar();
     
-//Armazenando a letra do estado informado pelo usuário   
-    printf("Insira a letra do Estado onde a cidade se encontra: \n");
-      scanf(" %c", &UF_1);
+//Armazenando a UF informado pelo usuário   
+    printf("Insira a UF onde a cidade se encontra: \n");
+      scanf(" %s", &UF_1);
         
   
 //Armazenando o código da carta informado pelo usuário
@@ -61,7 +61,7 @@ int main() {
 
 //Armazenando a população da cidade informado pelo usuário
     printf("Insira a população da cidade: \n");
-      scanf("%d", &populacao_1);
+      scanf("%f", &populacao_1);
         getchar();
 
 //Armazenando a área da cidade informado pelo usuário
@@ -94,9 +94,9 @@ int main() {
       scanf("%d", &numero_do_carta_2 );
         getchar();
     
-//Armazenando a letra do estado informado pelo usuário   
-    printf("Insira a letra do Estado onde a cidade se encontra: \n");
-      scanf(" %c", &UF_2);
+//Armazenando a UF informado pelo usuário   
+    printf("Insira a UF onde a cidade se encontra: \n");
+      scanf(" %s", &UF_2);
         getchar();
   
 //Armazenando o código da carta informado pelo usuário
@@ -140,7 +140,7 @@ int main() {
 
     printf("Código da carta: %s \n", codigo_da_carta_1);
 
-    printf("Letra do estado: %c \n", UF_1);
+    printf("UF: %s \n", UF_1);
 
     printf("Nome da cidade: %s \n", nome_da_cidade_1);
 
@@ -163,7 +163,7 @@ int main() {
 
     printf("Código da carta: %s \n", codigo_da_carta_2);
 
-    printf("Letra do estado: %c \n", UF_2);
+    printf("UF: %s \n", UF_2);
 
     printf("Nome da cidade: %s \n", nome_da_cidade_2);
 
