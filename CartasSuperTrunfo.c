@@ -10,7 +10,7 @@ int main() {
 
 //variáveis para armazenar os valores da carta 1
   int numero_carta1, pontos_turisticos1;
-  char UF1;
+  char UF1[3];
   char codigo_carta1[6]; 
   char cidade1[30];
   float pop1, pib1, area1;
@@ -18,7 +18,7 @@ int main() {
 
 //variáveis para armazenar os valores da carta 2
   int numero_carta2, pontos_turisticos2 ;
-  char UF2;
+  char UF2[3];
   char codigo_carta2[5]; 
   char cidade2[30];
   float pop2, area2, pib2;
@@ -42,7 +42,8 @@ int main() {
     
 //Armazenando a UF informado pelo usuário   
     printf("Insira a UF onde a cidade se encontra: \n");
-      scanf(" %s", UF1);
+      scanf("%2s", UF1);
+         getchar();
         
   
 //Armazenando o código da carta informado pelo usuário
@@ -91,7 +92,7 @@ int main() {
     
 //Armazenando a UF informado pelo usuário   
     printf("Insira a UF onde a cidade se encontra: \n");
-      scanf(" %s", UF2);
+      scanf("%2s", UF2);
         getchar();
   
 //Armazenando o código da carta informado pelo usuário
@@ -126,11 +127,12 @@ int main() {
 
 // Cálculo do PIB per capita e densidade populacional da carta 2
 
+
   float dens_pop1 = pop1/area1;
-  float pib_per_capita_1 = pib1/pop1;
+  float pib_per_capita1 = pib1/pop1;
 
   float dens_pop2 = pop2/area2;
-  float pib_per_capita_2 = pib2/pop2;
+  float pib_per_capita2 = pib2/pop2;
 
   
  
@@ -157,7 +159,7 @@ int main() {
 
     printf("Densiade populacional: %.2f hab/km² \n", dens_pop1);
 
-    printf("PIB per Capita: %.2f reais \n", pib_per_capita_1);
+    printf("PIB per Capita: %.2f reais \n", pib_per_capita1);
 
 
 
@@ -180,9 +182,9 @@ int main() {
 
     printf("Pontos turísticos: %d \n", pontos_turisticos2);
     
-    printf("Densiade populacional: %.2f hab/km² \n", dens_pop1);
+    printf("Densiade populacional: %.2f hab/km² \n", dens_pop2);
 
-    printf("PIB per Capita: %.2f reais \n", pib_per_capita_1);
+    printf("PIB per Capita: %.2f reais \n", pib_per_capita2);
 
 
 
