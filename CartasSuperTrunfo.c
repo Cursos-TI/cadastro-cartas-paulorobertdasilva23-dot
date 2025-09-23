@@ -13,7 +13,7 @@ int main() {
   char UF_1;
   char codigo_da_carta_1[6]; 
   char nome_da_cidade_1[30];
-  int populacao_1;
+  float populacao_1;
   float area_da_cidade_1;
   float pib_1;
   int pontos_turisticos_1;
@@ -23,7 +23,7 @@ int main() {
   char UF_2;
   char codigo_da_carta_2[5]; 
   char nome_da_cidade_2[30];
-  int populacao_2;
+  float populacao_2;
   float area_da_cidade_2;
   float pib_2;
   int pontos_turisticos_2;
@@ -76,8 +76,8 @@ int main() {
   
 //Armazenando o pib da cidade informado pelo usuário
     printf("Insira a quantidade de pontos da cidade: \n");
-      scanf("%d", pontos_turisticos_1);
-        getchar();
+      scanf(" %d", &pontos_turisticos_1);
+       
 
 
 
@@ -111,7 +111,7 @@ int main() {
 
 //Armazenando a população da cidade informado pelo usuário
     printf("Insira a população da cidade: \n");
-      scanf("%d", &populacao_2);
+      scanf("%f", &populacao_2);
         getchar();
 
 //Armazenando a área da cidade informado pelo usuário
