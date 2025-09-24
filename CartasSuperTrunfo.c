@@ -157,7 +157,7 @@ int main() {
 
     printf("Pontos turísticos: %d \n", pontos_turisticos1);
 
-    printf("Densiade populacional: %.2f hab/km² \n", dens_pop1);
+    printf("Densidade populacional: %.2f hab/km² \n", dens_pop1);
 
     printf("PIB per Capita: %.2f reais \n", pib_per_capita1);
 
@@ -182,7 +182,7 @@ int main() {
 
     printf("Pontos turísticos: %d \n", pontos_turisticos2);
     
-    printf("Densiade populacional: %.2f hab/km² \n", dens_pop2);
+    printf("Densidade populacional: %.2f hab/km² \n", dens_pop2);
 
     printf("PIB per Capita: %.2f reais \n", pib_per_capita2);
 
@@ -190,4 +190,3 @@ int main() {
 
 return 0;
 } 
-
