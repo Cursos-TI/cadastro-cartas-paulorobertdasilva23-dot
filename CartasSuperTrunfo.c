@@ -125,7 +125,13 @@ int main() {
       scanf("%d", &pontos_turisticos2);
         getchar();
 
-// Cálculo do PIB per capita e densidade populacional da carta 2
+
+
+// Área de cálculos
+
+// Cálculo do PIB per capita e densidade populacional das carta  1 e 2
+
+//população, área, PIB, número de pontos turísticos, PIB per capita e o inverso da densidade populacional – quanto menor a densidade, maior o "poder"
 
 
   float dens_pop1 = pop1/area1;
@@ -134,7 +140,13 @@ int main() {
   float dens_pop2 = pop2/area2;
   float pib_per_capita2 = pib2/pop2;
 
-  
+// Cálculo dos resultados
+  float dens_pop_inv1 = 1 / dens_pop1;
+  float dens_pop_inv2 = 1 / dens_pop2;
+  unsigned int super_poder1 = dens_pop_inv1 + area1 + pib1 + pontos_turisticos1 + pib_per_capita1;
+
+// int pontos_turisticos1;
+  float pop1, pib1, area1;
  
 
 // Área para exibição dos dados da carta 1
