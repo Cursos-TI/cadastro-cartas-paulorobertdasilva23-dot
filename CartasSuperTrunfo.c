@@ -14,7 +14,8 @@ int main() {
   char codigo_carta1[6]; 
   char cidade1[30];
   float pop1, pib1, area1;
-  
+ 
+
 
 //variáveis para armazenar os valores da carta 2
   int numero_carta2, pontos_turisticos2 ;
@@ -133,7 +134,6 @@ int main() {
 
 //população, área, PIB, número de pontos turísticos, PIB per capita e o inverso da densidade populacional – quanto menor a densidade, maior o "poder"
 
-
   float dens_pop1 = pop1/area1;
   float pib_per_capita1 = pib1/pop1;
 
@@ -143,11 +143,18 @@ int main() {
 // Cálculo dos resultados
   float dens_pop_inv1 = 1 / dens_pop1;
   float dens_pop_inv2 = 1 / dens_pop2;
-  unsigned int super_poder1 = dens_pop_inv1 + area1 + pib1 + pontos_turisticos1 + pib_per_capita1;
+  unsigned int super_poder1 = pop1 + area1 + pib1 + pontos_turisticos1 + pib_per_capita1 + dens_pop_inv1;
+  unsigned int super_poder2 = pop2 + area2 + pib2 + pontos_turisticos2 + pib_per_capita2 + dens_pop_inv2;
+  int resultado_pop, resultado_area, resultado_PIB, resultado_pontos_turisticos, resultado_PIB_per_carpita, resultado_dens_pop_inv, resultado_super_poder;
 
-// int pontos_turisticos1;
-  float pop1, pib1, area1;
- 
+  resultado_pop = pop1 > pop2;
+  resultado_area = area1 > area2;
+  resultado_PIB = pib1 > pib2;
+  resultado_pontos_turisticos = pontos_turisticos1 > pontos_turisticos2;
+  resultado_PIB_per_carpita = pib_per_capita1 > pib_per_capita2;
+  resultado_dens_pop_inv = dens_pop_inv1 > dens_pop_inv2;
+  resultado_super_poder = super_poder1 > super_poder2;
+
 
 // Área para exibição dos dados da carta 1
 
