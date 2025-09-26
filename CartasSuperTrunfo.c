@@ -132,8 +132,6 @@ int main() {
 
 // Cálculo do PIB per capita e densidade populacional das carta  1 e 2
 
-//população, área, PIB, número de pontos turísticos, PIB per capita e o inverso da densidade populacional – quanto menor a densidade, maior o "poder"
-
   float dens_pop1 = pop1/area1;
   float pib_per_capita1 = pib1/pop1;
 
